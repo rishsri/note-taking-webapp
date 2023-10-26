@@ -19,14 +19,9 @@ const Notes = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!user.email) {
-      navigate(login);
-    }
-  }, []);
+  
 
   const handleAddTodo = () =>{
-    
     setOpen(true)
   }
 
