@@ -22,16 +22,4 @@ export const todoList = [
       email: "hushabh@gmail.com",
     },
   },
-  {
-    id: "345g6h",
-    value: {
-      title: "Exercise Routine",
-      content:
-        "30 minutes of cardio, 20 minutes of weight training, and 10 minutes of stretching.",
-    },
-    createdBy: {
-      name: "rishabh",
-      email: "hushabh@gmail.com",
-    },
-  },
 ];

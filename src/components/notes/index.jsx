@@ -19,11 +19,9 @@ const Notes = () => {
 
   const navigate = useNavigate();
 
-  
-
-  const handleAddTodo = () =>{
-    setOpen(true)
-  }
+  const handleAddTodo = () => {
+    setOpen(true);
+  };
 
   const pageSize = 4;
   const lastIndex = currentPage * pageSize;
@@ -34,6 +32,10 @@ const Notes = () => {
   for (let i = 1; i <= totalNofPages; i++) {
     noOfPAgesss.push(i);
   }
+
+  const handleCreateTodo = () => {
+    setOpen(true);
+  };
 
   return (
     <div>
@@ -54,10 +56,7 @@ const Notes = () => {
         )}
         {todoList.length ? (
           <>
-            <button
-              className="font-bold text-base "
-              onClick={() => setOpen(true)}
-            >
+            <button className="font-bold text-base " onClick={handleCreateTodo}>
               Add Todo +
             </button>
             {users.length === 0 ? (
@@ -95,7 +94,6 @@ const Notes = () => {
               index={index}
               setOpen={setOpen}
               setEditNoteId={setEditNoteId}
-              
             />
           );
         })}
